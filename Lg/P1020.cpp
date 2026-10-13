@@ -5,7 +5,7 @@ int main(){
     vector<int>a;
     int x;
     while(cin>>x) a.push_back(x);
-    if(a.empty())cout<<0<<endl<<0<<endl;
+    if(a.empty()){cout<<0<<endl<<0<<endl;return 0;}
     vector<int>b;
     for(int y:a){
         if(b.empty()||b.back()>=y) b.push_back(y);
